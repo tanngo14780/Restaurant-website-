@@ -1,0 +1,110 @@
+.header-wrapper {
+    font-family: 'Dongle', sans-serif;
+}
+.header-wrapper .header-entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 100px;
+}
+.header-wrapper .header-entry .navigation ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.header-wrapper .header-entry .navigation ul li {
+    font-weight: 700;
+    font-size: 33.61px;
+    line-height: 23.6px;
+    color: #934F4C;
+    margin-right: 50px;
+}
+.header-wrapper .header-entry .order-section button {
+    padding: 9px 18px;
+    border: 1.96px solid #F23E4D;
+    font-weight: 700;
+    font-size: 33.61px;
+    color: #F23E4D;
+    font-family: 'Dongle', sans-serif;
+    line-height: 19.6px;
+    border-radius: 18.5px;
+    padding-top: 12px;
+}
+.header-wrapper .header-entry .order-section button:hover{
+    color:#fff;
+}
+#navdrop{
+    display: none;
+}
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+}
+.avatar-dropdown img{
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+.avatar-dropdown{
+    position: relative;
+}
+.nav-list{
+    position: absolute;
+    background-color: #F23E4D;
+    width: 100px;
+    bottom: -2px;
+    right: 3px;
+    color: #fff;
+    border-radius: 5px;
+    transform: translateY(-200%);
+    transition:all 300ms linear;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+    padding-block: 5px;
+}
+.nav-item:hover {
+    cursor: pointer;
+}
+#navdrop:checked + .nav-list{
+    transform: translateY(0);
+}
+
+/* 
+.avatar-dropdown img{
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+} */
+
+.marquee1 {
+    color: var(--cream-white);
+    background-color: var(--red);
+    font-size: 20px;
+    overflow: hidden;
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.marquee1 p {
+    animation: move-rtl 8000ms linear infinite;
+    white-space: nowrap;
+    padding-top: 2px;
+}
+
+@keyframes move-rtl {
+0% {
+    transform: translateX(100%);
+}
+
+100% {
+    transform: translateX(0%);
+}
+}
